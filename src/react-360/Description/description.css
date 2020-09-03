@@ -1,0 +1,87 @@
+html, body, canvas {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
+
+body canvas {
+    cursor: grab;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: -ms-grab; }
+
+    .modal.left .modal-dialog,
+	.modal.right .modal-dialog {
+		position: fixed;
+		margin: auto;
+		width: 320px;
+		height: 100%;
+		-webkit-transform: translate3d(0%, 0, 0);
+		    -ms-transform: translate3d(0%, 0, 0);
+		     -o-transform: translate3d(0%, 0, 0);
+		        transform: translate3d(0%, 0, 0);
+	}
+
+
+	.modal.right .modal-content {
+		height: 100%;
+		overflow-y: auto;
+	}
+	Modal {
+        top: 10px;
+        right: 10px;
+        position: absolute;
+        line-height: 1em;
+        pointer-events: none;
+        z-index: -1;
+    }
+
+	.modal.right .modal-body {
+
+        padding: 15px 15px 80px;
+
+    }
+    .modal.right.fade .modal-dialog {
+		right: -320px;
+		-webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+		   -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+		     -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+		        transition: opacity 0.3s linear, right 0.3s ease-out;
+	}
+
+	.modal.right.fade.in .modal-dialog {
+		right: 0;
+	}
+
+/* ----- MODAL STYLE ----- */
+	.modal-content {
+		border-radius: 0;
+		border: none;
+	}
+
+	.modal-header {
+		border-bottom-color: #EEEEEE;
+		background-color: #FAFAFA;
+    }
+
+    .btn-circle {
+        width: 110px;
+        height: 110px;
+        padding: 1px ;
+        border-radius: 55px;
+        font-size: 8px;
+        text-align: center;
+    }
+    .btn-circle:hover {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+      }

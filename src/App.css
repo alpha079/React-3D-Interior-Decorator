@@ -1,0 +1,69 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body, #root, canvas{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
+ 
+body canvas {
+    cursor: grab;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: -ms-grab; }
+
+    body.rotating canvas {
+      cursor: grabbing;
+      cursor: -webkit-grabbing;
+      cursor: -moz-grabbing;
+      cursor: -ms-grabbing; }
+
+      @media screen and (max-width: 320px) and (max-height: 500px) {
+        .about  {
+          font-size: 130%; } }
+
+/* canvas{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 100px;
+  padding: 10px;
+  border: 1px solid ;
+ 
+  background-color: #cccccc;
+} */
+
+body{
+  background-color: azure; 
+  /* position: fixed; */
+}
+
+/* .main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #fff8de;
+  overflow: hidden;
+} */
+About {
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  font-size: 3em;
+  text-transform: uppercase;
+  width: auto;
+  line-height: .8em;
+  border: 5px solid black;
+  padding:2em;
+}
+  
+  
